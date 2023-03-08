@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../background.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+button{
+    align-items: center;
+    background-color: #fdfdfd;
+    border: 2px solid #102f5e;
+    color: #102f5e;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    padding: .3rem .6rem;
+    transition: .4s;
+}
+button:hover{
+    background-color: #102f5e;
+}
+button > i{
+    color: #000000;
+    font-weight: bold;
+    pointer-events: none; /**desabilita os eventos de click no link**/
+}
+button:hover > i{
+    color: #ffffff;
+}
+input, select{
+    padding: .25rem .5rem;
+}
+.hide{
+    display: none;
+}
+
+/*CABEÇALHO DO TO DO*/
+.todo-container{
+    background-color: #fdfdfd;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+}
+
+.todo-container header{
+    padding: 0 1rem;
+    text-align: center;
+    border: 1px solid #cccccc;
+}
+
+/*Formulário To Do*/
+#todo-form, #edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid #cccccc;
+}
+#todo-form p, #edit-form p{
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+.form-control{
+    display: flex;
+}
+.form-control input{
+    margin-right: .3rem;
+}
+#cancel-edit-btn{
+    margin-top: 1rem;
+}
+/*Tool bar todo*/
+#toolbar{
+    border-bottom: 1px solid #CCCCCC;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+#toolbar h4{
+    margin-bottom: .5rem;
+}
+#search{
+    border-right: 1px solid #DDDDDD;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding-right: 1rem;
+    width: 65%;
+}
+#search form{
+    display: flex;
+}
+#search input{
+    margin-right: .3rem;
+    width: 100%;
+}
+#filter{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+#filter select{
+    flex: 1;
+}
+/*Lista de ToDo*/
+.todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-bottom: 1px solid #DDDDDD;
+    transition: .3s;
+}
+.todo h3{
+    flex:1;
+    font-size: 0.9rem;
+}
+.todo button{
+    margin-left: 0.4rem;
+}
+.done{
+    background-color: #395169;
+}
+.done h3{
+    color: #FFFFFF;
+    font-style: italic;
+    text-decoration: line-through; /*texto fica riscado*/
+}
